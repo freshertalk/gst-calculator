@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator - FresherTalk Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="FresherTalk Logo" id="logo">
+    </header>
+    <main>
+        <h1>GST Calculator</h1>
+        <p>Enter the final amount, discount rate, and GST rate to calculate the original fees and GST amount.</p>
+        <form id="gst-form">
+            <label for="final-amount">Final Amount:</label>
+            <input type="number" id="final-amount" name="final-amount" step="0.01" required placeholder="Enter final amount">
+            <label for="discount-rate">Discount Rate (%):</label>
+            <input type="number" id="discount-rate" name="discount-rate" step="0.01" required placeholder="Enter discount rate (%)">
+            <label for="gst-rate">GST Rate (%):</label>
+            <input type="number" id="gst-rate" name="gst-rate" step="0.01" required placeholder="Enter GST rate (%)">
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+        <div id="results">
+            <p>Total Fees After Discount (with GST): <span id="discounted-fees"></span></p>
+            <p>Original Fees: <span id="original-fees"></span></p>
+            <p>GST Amount: <span id="gst-amount"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Registered Address: Aurangabad, Ghazipur, 233001, Uttar Pradesh, India</p>
+        <p>Registration No.: UPSA66715491 | MSME URN: UDYAM-UP-30-0037331</p>
+        <p>GSTIN: 09BMEPT8758F1ZD</p>
+        <p>Recognized by AICTE, New Delhi for offering internships</p>
+        <p>Email: <a href="mailto:campus@freshtalk.in">campus@freshtalk.in</a></p>
+        <p>Phone: <a href="tel:+919535039501">+91-95350 39501</a></p>
+        <p>Website: <a href="https://freshtalk.in">https://freshtalk.in</a></p>
+        <p>© 2025 FresherTalk Digital Solutions. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
